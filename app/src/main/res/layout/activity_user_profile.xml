@@ -1,0 +1,234 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <include
+        layout="@layout/top_app_bar"
+        android:id="@+id/topAppBar" />
+
+    <!-- CardView for Edit Profile -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardEditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/editprofile"
+        android:layout_width="70dp"
+        android:layout_height="71dp"
+        android:src="@drawable/editprofile"
+        tools:ignore="MissingConstraints"></ImageView>
+
+        <TextView
+            android:id="@+id/headingEditProfile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Edit Profile"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/editprofile"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/descriptionedit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Manage your personal information, preferences, and account settings."
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/headingEditProfile"
+            app:layout_constraintStart_toStartOf="@id/headingEditProfile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Notification Setting -->
+    <!-- You'll copy the structure of the CardView from Edit Profile and adjust ids and texts -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/notificationsettings"
+                android:layout_width="70dp"
+                android:layout_height="71dp"
+                android:src="@drawable/notificationsettings"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <TextView
+                android:id="@+id/headingNotificationSettings"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Notification Settings"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/notificationsettings"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/descriptionnotification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Customize alerts to your preference, from important app updates to exclusive deal notifications."
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/headingNotificationSettings"
+                app:layout_constraintStart_toStartOf="@id/headingNotificationSettings"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Orders/Tracking -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardOrders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/orders"
+                android:layout_width="70dp"
+                android:layout_height="71dp"
+                android:src="@drawable/orders"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <TextView
+                android:id="@+id/headingOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Your Orders/Tracking"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/orders"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/descriptionorder"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Monitor your purchases with ease, tracking order confirmations to delivery status in real-time."
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/headingOrders"
+                app:layout_constraintStart_toStartOf="@id/headingOrders"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for Invite Friends -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardInviteFriends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="@drawable/ripple_effect">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/invitefriends"
+                android:layout_width="70dp"
+                android:layout_height="71dp"
+                android:src="@drawable/invitefriends"
+                tools:ignore="MissingConstraints"></ImageView>
+
+            <TextView
+                android:id="@+id/headingInviteFriends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Invite Friends"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/invitefriends"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/descriptioninvitefriends"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Enhance your network by inviting friends to the app, sharing referral links or codes for rewards."
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@id/headingInviteFriends"
+                app:layout_constraintStart_toStartOf="@id/headingInviteFriends"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+    <include
+        android:id="@+id/bottomNavigationBar"
+        layout="@layout/bottom_navigation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        />
+</LinearLayout>

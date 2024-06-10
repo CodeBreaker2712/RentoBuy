@@ -1,0 +1,33 @@
+<!-- layout/item_order.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginVertical="5dp"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_order_title"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Order Title"
+        android:textSize="18sp"
+        android:gravity="center|start"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tv_order_price"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Order Title"
+        android:textSize="18sp"
+        android:gravity="center|end"
+        android:textColor="#4CAF50"
+      />
+
+
+</LinearLayout>

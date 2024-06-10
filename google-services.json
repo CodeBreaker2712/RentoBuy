@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "88903668794",
+    "project_id": "rentobuy-abe7e",
+    "storage_bucket": "rentobuy-abe7e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88903668794:android:ce69f77e43ad5c1d5c1103",
+        "android_client_info": {
+          "package_name": "com.example.rentobuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88903668794-gugv3grul7qthrgrtt6p555dsv2drk9j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rentobuy",
+            "certificate_hash": "471a7483e4c70209f707d9edad2a86c2f36b460c"
+          }
+        },
+        {
+          "client_id": "88903668794-22sbe79qqhois03c5gn3056i1vmn26kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgP3-I-Il2_u-2cfazwGpkCU11dNUDKGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88903668794-22sbe79qqhois03c5gn3056i1vmn26kl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

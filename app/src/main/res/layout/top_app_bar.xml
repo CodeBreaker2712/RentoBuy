@@ -1,0 +1,54 @@
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topAppBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/grey"
+    app:contentInsetEnd="0dp"
+    app:contentInsetStart="0dp">
+
+    <!-- Logo on the left side with a smaller size -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/logo"
+        android:background="@color/grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Container for Switch to Seller Button and Chat Button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp">
+
+        <!-- Switch to Seller Button -->
+        <Button
+            android:id="@+id/btnSwitchToSeller"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:padding="8dp"
+            android:text="Switch to seller"
+            android:textColor="@color/primary"
+            android:textStyle="bold" />
+
+        <!-- Chat Button -->
+        <ImageButton
+            android:id="@+id/btnChat"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="8dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_chat" />
+    </LinearLayout>
+
+</com.google.android.material.appbar.MaterialToolbar>

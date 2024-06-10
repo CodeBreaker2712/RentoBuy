@@ -1,0 +1,6 @@
+<!-- res/drawable/ripple_effect.xml -->
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="?android:attr/colorControlHighlight"> <!-- You can customize the ripple color -->
+    <item android:id="@android:id/mask"
+        android:drawable="@android:color/white" />
+</ripple>

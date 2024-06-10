@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- App Bar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        android:elevation="4dp"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@android:color/white">
+
+        <!-- Back Button -->
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentStart="true"/>
+
+        <!-- Title TextView -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Order"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_toEndOf="@id/btnBack"/>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/toolbar"
+       android:paddingHorizontal="16dp">
+       <TextView
+           android:id="@+id/txtOrderId"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Order ID: "
+           android:textStyle="bold"
+           android:layout_marginTop="20dp"
+           android:textSize="18sp"
+           android:layout_alignParentStart="true" />
+
+       <TextView
+           android:id="@+id/txtTrackingId"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Tracking ID: "
+           android:textStyle="bold"
+           android:textSize="18sp"
+           android:layout_below="@id/txtOrderId"
+           android:layout_alignStart="@id/txtOrderId"
+           android:layout_marginTop="8dp" />
+       <TextView
+           android:id="@+id/txtOrderStatus"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Status: "
+           android:textStyle="bold"
+           android:textSize="18sp"
+           android:layout_below="@id/txtTrackingId"
+           android:layout_alignStart="@id/txtOrderId"
+           android:layout_marginTop="8dp" />
+
+       <TextView
+           android:id="@+id/txtOrderDate"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Order Date: "
+           android:textStyle="bold"
+           android:textSize="18sp"
+           android:layout_below="@id/txtOrderStatus"
+           android:layout_alignStart="@id/txtOrderStatus"
+           android:layout_marginTop="8dp" />
+
+       <TextView
+           android:id="@+id/txtDispatched"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Dispatched at: "
+           android:textStyle="bold"
+           android:textSize="18sp"
+           android:layout_below="@id/txtOrderDate"
+           android:layout_alignStart="@id/txtOrderDate"
+           android:layout_marginTop="8dp" />
+
+       <TextView
+           android:id="@+id/txtArrived"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Arrived at: "
+           android:textStyle="bold"
+           android:textSize="18sp"
+           android:layout_below="@id/txtDispatched"
+           android:layout_alignStart="@id/txtDispatched"
+           android:layout_marginTop="8dp" />
+
+       <TextView
+           android:id="@+id/txtDelivery"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Expected Delivery: "
+           android:textStyle="bold"
+           android:textSize="18sp"
+           android:layout_below="@id/txtArrived"
+           android:layout_alignStart="@id/txtArrived"
+           android:layout_marginTop="8dp" />
+
+   </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".modules.products.ProductsActivity">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:text="ProductsActivity"/>
+
+    <Button
+        android:id="@+id/addProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Product"/>
+
+
+    <Button
+        android:id="@+id/goToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Cart"/>
+
+
+    <Button
+        android:id="@+id/goToWish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Wish"/>
+
+    <Button
+        android:id="@+id/goToChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go To Product chat"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProducts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

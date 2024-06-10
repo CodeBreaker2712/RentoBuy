@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_gravity="center"
+        tools:context=".modules.auth.SignupActivity">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Heading -->
+        <TextView
+            android:id="@+id/textViewHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Your Details to Sign Up"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/imageViewLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_rounded_border"
+            android:padding="12dp"
+            android:layout_below="@id/textViewHeading"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:background="@drawable/edittext_rounded_border"
+            android:padding="12dp"
+            android:layout_below="@id/editTextEmail"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- First Name and Last Name Fields -->
+        <LinearLayout
+            android:id="@+id/linearLayoutName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/editTextPassword">
+
+            <!-- First Name Field -->
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="First Name"
+                android:background="@drawable/edittext_rounded_border"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Last Name Field -->
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Last Name"
+                android:background="@drawable/edittext_rounded_border"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Mobile and Gender Fields -->
+        <LinearLayout
+            android:id="@+id/linearLayoutDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/linearLayoutName"
+            android:layout_marginTop="8dp">
+
+            <!-- Mobile Field -->
+            <EditText
+                android:id="@+id/editTextMobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Mobile"
+                android:inputType="phone"
+                android:background="@drawable/edittext_rounded_border"
+                android:padding="12dp"
+                android:layout_marginEnd="8dp"/>
+
+            <!-- Gender Field -->
+            <EditText
+                android:id="@+id/editTextGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Gender"
+                android:background="@drawable/edittext_rounded_border"
+                android:padding="12dp"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:layout_below="@id/linearLayoutDetails"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Back to Login Button -->
+        <Button
+            android:id="@+id/btnBackToLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        android:text="Back to Login"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSignUp"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
+
+</ScrollView>

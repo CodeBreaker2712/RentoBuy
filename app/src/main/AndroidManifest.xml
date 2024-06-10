@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher2"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rentobuy"
+        tools:targetApi="31">
+        <activity
+            android:name=".modules.orders.ReturnPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.products.ModifySellerProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.products.SellerProductDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.chat.ChatListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.notification.NotificationSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.chat.ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.payment.PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.products.ProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.wishlist.WishListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.cart.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".services.AppMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/black" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="General" />
+
+        <activity android:name=".modules.auth.LoginActivity" />
+        <activity android:name=".modules.auth.SignupActivity" />
+        <activity android:name=".modules.auth.ForgotPasswordActivity" />
+        <activity android:name=".modules.auth.ProfileActivity" />
+        <activity android:name=".modules.home.HomePageActivity" />
+        <activity android:name=".modules.home.UserProfileActivity" />
+        <activity android:name=".modules.seller_inventory.SellerInventoryActivity" />
+        <activity android:name=".modules.products.ProductUploadActivity" />
+        <activity android:name=".modules.products.ProductDetailsActivity" />
+        <activity
+            android:name=".modules.orders.MyOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.orders.OrderTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.orders.OrdersDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.weather.WeatherActivity"
+            android:exported="false" />
+        <activity android:name=".modules.delivery.AddressSelectionActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCgP3-I-Il2_u-2cfazwGpkCU11dNUDKGY" />
+    </application>
+
+</manifest>
